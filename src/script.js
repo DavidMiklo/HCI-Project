@@ -1,25 +1,11 @@
 function updateContent(page) {
     fetch(page)
-  .then(response=> response.text())
-  .then(text=> document.getElementById('content').innerHTML = text.getElementById('content').innerHTML);
-
-
-    // let message;
-    // switch (page) {
-    //     case 'home':
-    //         message = "You clicked on the Home button.";
-    //         break;
-    //     case 'library':
-    //         message = "You clicked on the Library button.";
-    //         break;
-    //     case 'search':
-    //         message = "You clicked on the Search button.";
-    //         break;
-    //     case 'friends':
-    //         message = "You clicked on the Friends button.";
-    //         break;
-    //     default:
-    //         message = "Invalid button clicked.";
-    // }
-    // document.getElementById('content').innerHTML = "<p>" + message + "</p>";
+        .then(response => response.text())
+        .then(html => {
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(html, 'text/html');
+            const content = doc.getElementById('content').innerHTML;
+            document.getElementById('content').innerHTML = content;
+        })
+        .catch(error => console.error('Error fetching page:', error));
 }
