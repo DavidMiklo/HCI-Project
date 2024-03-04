@@ -14,15 +14,21 @@
 
 <body>
     <h1>Twista</h1>
+    <iframe id="content-iframe" src="home.html"></iframe>
 
 
     <div class="navigation-panel">
-        <button class="btn"><i class="fa-solid fa-house"></i></button>
-        <button class="btn"><i class="fa-solid fa-book-open"></i></button>
-        <button class="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
-        <button class="btn"><i class="fa-solid fa-user-group"></i></button>
+        <button class="btn" onclick="changePageTo('home.html')"><i class="fa-solid fa-house"></i></button>
+        <button class="btn" onclick="changePageTo('library.html')"><i class="fa-solid fa-book-open"></i></button>
+        <button class="btn" onclick="changePageTo('search.html')"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <button class="btn" onclick="changePageTo('friends.html')"><i class="fa-solid fa-user-group"></i></button>
     </div>
 
+    <script>
+        function changePageTo(page) {
+            document.getElementById('content-iframe').src = page;
+        }
+    </script>
 
 </body>
 
