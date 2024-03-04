@@ -1,32 +1,19 @@
+/* OUR CODE */
 
-#full-site {
-    height: 100vh;
+h1 {
+    text-align: center;
+}
+
+.navigation-panel {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    background-color: #cbc9c9;
+    align-items: center;
+    background-color: #F2F2F2;
 }
 
-#main {
-    position: relative;
-    aspect-ratio: 10/15;
-    border: 1px solid black;
-    background-color: white;
-}
-
-    h1 {
-        text-align: center;
-    }
-
-    .navigation-panel {
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        height: 10%;
-        display: flex;
-        align-items: center;
-        background-color: #F2F2F2;
-    }
 
     .btn {
         flex-grow: 1; 
