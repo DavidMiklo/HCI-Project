@@ -37,3 +37,8 @@
         margin: 0 auto; 
 
     }
+
+    img[alt="album cover"] {
+        width: 60px;
+        height: 60px;
+    }
