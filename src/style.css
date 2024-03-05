@@ -21,3 +21,41 @@ h1 {
     margin: 0 auto;
 
 }
+
+img[alt="album cover"] {
+    width: 60px;
+    height: 60px;
+}
+
+.recently-played-item {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+.recently-played-item p {
+    margin: 0 10px;
+    align-self: center;
+
+}
+
+         
+.recently-played-item {
+    background-image: linear-gradient(to right, #ECE9E6 0%, #FFFFFF  11%, #b69b7e  100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: flex;
+  }
+
+  .btn-grad:hover {
+    background-position: right center; 
+    color: #fff;
+    text-decoration: none;
+  }
+ 
