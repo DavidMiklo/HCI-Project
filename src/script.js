@@ -20,15 +20,24 @@ function startListening() {
 }
 
 function playPause() {
-    var icon = document.getElementById('banner-play-pause-icon');
-    if (listening) {
-        listening = false;
-        icon.classList.remove('fa-play');
-        icon.classList.add('fa-pause');
+    var banner_icon = document.getElementById('banner-play-pause-icon');
+    var menu_icon = document.getElementById('menu-play-pause-icon');
+    if (!listening) {
+        listening = true;
+        banner_icon.classList.remove('fa-play');
+        banner_icon.classList.add('fa-pause');
+        if (menu_icon !== null) {
+            menu_icon.classList.remove('fa-play');
+            menu_icon.classList.add('fa-pause');
+        }
     }
     else {
-        icon.classList.remove('fa-pause');
-        icon.classList.add('fa-play');
-        startListening();
+        listening = false;
+        banner_icon.classList.remove('fa-pause');
+        banner_icon.classList.add('fa-play');
+        if (menu_icon !== null) {
+            menu_icon.classList.remove('fa-pause');
+            menu_icon.classList.add('fa-play');
+        }
     }
 }
