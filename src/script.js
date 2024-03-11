@@ -9,3 +9,7 @@ function updateContent(page) {
         })
         .catch(error => console.error('Error fetching page:', error));
 }
+
+function startListening() {
+    updateContent('listening.html')
+}
