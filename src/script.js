@@ -20,10 +20,15 @@ function startListening() {
 }
 
 function playPause() {
+    var icon = document.getElementById('play-pause');
     if (listening) {
         listening = false;
+        icon.classList.remove('fa-play');
+        icon.classList.add('fa-pause');
     }
     else {
+        icon.classList.remove('fa-pause');
+        icon.classList.add('fa-play');
         startListening();
     }
 }
