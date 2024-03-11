@@ -21,6 +21,42 @@ h1 {
     font-size: 24px;
 }
 
+#song-banner {
+    position: absolute;
+    bottom: -10%;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    background-color: #C9ADA7;
+    border: none;
+    animation: slideUpSongBanner 1s forwards;
+}
+
+@keyframes slideUpSongBanner {
+    from {
+        bottom: -10%; /* Start position */
+    }
+    to {
+        bottom: 10%; /* End position */
+    }
+}
+
+#song-banner img {
+    max-height: 100%;
+    margin-right: 10px; 
+    transform: scale(1.01);
+}
+
+#song-banner p {
+    margin: 0 10px;
+    align-self: center;
+    color: #22223B;
+    font-size: large;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 900;
+}
+
 .nav-panel {
     position: absolute;
     bottom: 0;
