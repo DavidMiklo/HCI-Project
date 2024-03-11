@@ -21,10 +21,6 @@ h1 {
     font-size: 24px;
 }
 
-button:active {
-    background-color: #4A4E69;
-}
-
 #song-banner {
     position: absolute;
     bottom: 0%;
@@ -99,6 +95,11 @@ button:active {
     border-right: 0px;
 }
 
+.nav-button:active {
+    background-color: #4A4E69;
+}
+
+
 .music-list {
     width: 100%;
     justify-content: center;
@@ -170,6 +171,7 @@ button:active {
     align-items: center;
     justify-content: center;
     text-align: center;
+    padding-bottom: 20px;
 }
 
 #song-menu img {
@@ -182,7 +184,7 @@ button:active {
     margin: 20px auto;
     text-align: center;
     font-weight: 900;
-    font-size: 64px;
+    font-size: 58px;
 }
 
 #song-menu h3 {
@@ -192,7 +194,13 @@ button:active {
     font-size: 32px;
 }
 
-#song-menu #menu-play-pause {
+#song-menu-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.song-menu-button {
     margin: 0 30px;
     border: none;
     font-size: 64px;
@@ -200,5 +208,9 @@ button:active {
     align-self: center;
     text-align: center;
     background-color: transparent;
+    font-size: 50px;
 }
 
+#song-menu #menu-play-pause {
+    font-size: 64px;
+}
