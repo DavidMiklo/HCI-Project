@@ -1,3 +1,5 @@
+listening = false;
+
 function updateContent(page) {
     fetch(page)
         .then(response => response.text())
@@ -11,5 +13,17 @@ function updateContent(page) {
 }
 
 function startListening() {
+    var song_banner = document.getElementById('song-banner');
+    song_banner.classList.add('slideUpSongBanner');
+    listening = true;
     updateContent('listening.html')
+}
+
+function playPause() {
+    if (listening) {
+        listening = false;
+    }
+    else {
+        startListening();
+    }
 }
