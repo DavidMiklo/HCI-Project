@@ -39,7 +39,7 @@ img[alt="album cover"] {
 }
 
 .recently-played-item {
-    background-image: linear-gradient(to right, #efe6dc 0%, #FFFFFF  11%, #b69b7e  100%);
+    background-image: linear-gradient(to right, #efeae4 0%, #e9e1d7  11%, #e9e0d0  100%);
     padding: 15px 25px;
     text-align: center;
     transition: 0.5s;
@@ -63,4 +63,29 @@ h2 {
     text-align: center;
 }
 
+.favouriteContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+}
 
+.favourite-button {
+    margin-top: 50px;
+    background-image: linear-gradient(to right, #efeae4 0%, #e9e1d7  11%, #e9e0d0  100%);
+    padding: 100px;
+    transition: 0.5s;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px; 
+    flex-grow: 1;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.favourite-button i {
+    font-size: 64px;
+}
