@@ -41,3 +41,23 @@ function playPause() {
         }
     }
 }
+
+function searchMusic() {
+    var input = document.getElementById('search');
+    var filter = input.value.toUpperCase();
+    var list = Array.from(document.getElementsByClassName('music-list-item'));
+
+    for (var i = 0; i < list.length; i++) {
+        var name = list[i].getElementsByTagName('p')[0].innerHTML.toUpperCase();
+        console.log(name);
+        console.log(filter);
+        if (name.indexOf(filter) > -1) {
+            list[i].style.display = "";
+        } else {
+            list[i].style.display = "none";
+        }
+    }
+    
+}
+
+
