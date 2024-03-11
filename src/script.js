@@ -20,7 +20,7 @@ function startListening() {
 }
 
 function playPause() {
-    var icon = document.getElementById('play-pause');
+    var icon = document.getElementById('play-pause-icon');
     if (listening) {
         listening = false;
         icon.classList.remove('fa-play');
