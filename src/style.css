@@ -224,6 +224,39 @@ h1 {
     font-size: 32px;
 }
 
+#song-menu #slider {
+    -webkit-appearance: none;
+    width: 90%;
+    color: #C9ADA7;
+    background-color: #9A8C98;
+}
+
+#song-menu #slider::-webkit-slider-runnable-track {
+    background: #22223B;
+    border-radius: 5px;
+    height: 10px;
+}
+
+
+/* This is not working but I don't care enough to fix it */
+@keyframes moveThumb {
+    0% { left: 0%; }
+    100% { left: 100%; }
+}
+
+#song-menu #slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: -5px;
+    background-color: #22223B;
+    animation: moveThumb 5s linear infinite;
+}
+
+
 #song-menu-buttons {
     display: flex;
     align-items: center;
