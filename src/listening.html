@@ -16,14 +16,25 @@
     <div id="content">
         <h1>Listening</h1>
         <div id="song-menu">
-            <!-- <button class="song-menu-button" id="menu-quality" onclick></button> -->
+            <div id="quality-menu">
+                <p>Quality: </p>
+                <select class="song-menu-button" id="menu-quality" onclick>
+                    <option value="Low">Low</option>
+                    <option value="Mid">Mid</option>
+                    <option value="High">High</option>
+                    <option value="Max">Max</option>
+                </select>
+            </div>
             <img src="images/kindofblue.jpg" alt="album cover">
             <h2>Kind of Blue</h2>
             <h3>Miles Davis</h3>
             <div id="song-menu-buttons">
-                <button class="song-menu-button" id="menu-backward" onclick="playPause()"><i class="fa-solid fa-backward"></i></button>
-                <button class="song-menu-button" id="menu-play-pause" onclick="playPause()"><i id="menu-play-pause-icon" class="fa-solid fa-pause"></i></button>
-                <button class="song-menu-button" id="menu-forward" onclick="playPause()"><i class="fa-solid fa-forward"></i></button>
+                <button class="song-menu-button" id="menu-backward" onclick="playPause()"><i
+                        class="fa-solid fa-backward"></i></button>
+                <button class="song-menu-button" id="menu-play-pause" onclick="playPause()"><i id="menu-play-pause-icon"
+                        class="fa-solid fa-pause"></i></button>
+                <button class="song-menu-button" id="menu-forward" onclick="playPause()"><i
+                        class="fa-solid fa-forward"></i></button>
             </div>
         </div>
     </div>
