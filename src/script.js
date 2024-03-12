@@ -16,6 +16,9 @@ function startListening() {
     var song_banner = document.getElementById('song-banner');
     song_banner.classList.add('slideUpSongBanner');
     listening = true;
+    var banner_icon = document.getElementById('banner-play-pause-icon');
+    banner_icon.classList.remove('fa-play');
+    banner_icon.classList.add('fa-pause');
     updateContent('listening.html')
 }
 
