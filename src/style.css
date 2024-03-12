@@ -211,14 +211,14 @@ h1 {
 }
 
 #song-menu h2 {
-    margin: 20px auto;
+    margin: 15px auto 10px auto;
     text-align: center;
     font-weight: 900;
     font-size: 58px;
 }
 
 #song-menu h3 {
-    margin: 20px auto;
+    margin: 10px auto;
     text-align: center;
     font-weight: 900;
     font-size: 32px;
@@ -229,6 +229,7 @@ h1 {
     width: 90%;
     color: #C9ADA7;
     background-color: #9A8C98;
+    margin: 10px 0 15px 0;
 }
 
 #song-menu #slider::-webkit-slider-runnable-track {
@@ -266,7 +267,7 @@ h1 {
 .song-menu-button {
     margin: 0 30px;
     border: none;
-    font-size: 64px;
+    font-size: 55px;
     color: #22223B;
     align-self: center;
     text-align: center;
@@ -335,12 +336,14 @@ img.profile-picture {
     color: #F2E9E4;
     padding: 10px;
     font-family: Helvetica, Arial, sans-serif;
+    font-weight: 600;
 }
 
 .search-bar input[type=text]::placeholder {
     font-size: large;
     font-family: Helvetica, Arial, sans-serif;
     color: #9A8C98;
+    font-weight: 600;
 }
 
 .search-bar {
