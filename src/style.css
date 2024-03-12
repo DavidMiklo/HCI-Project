@@ -29,6 +29,7 @@ h1 {
     background-color: #C9ADA7;
     border: none;
     transition: bottom 1s ease;
+    border-top: 2px solid #5e546e;
 
     color: #22223B;
     font-size: large;
