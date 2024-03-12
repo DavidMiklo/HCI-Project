@@ -1,4 +1,5 @@
 listening = false;
+document.getElementById("song-banner").onclick = function () { updateContent('listening.html'); }
 
 function updateContent(page) {
     fetch(page)
@@ -8,6 +9,12 @@ function updateContent(page) {
             const doc = parser.parseFromString(html, 'text/html');
             const content = doc.getElementById('content').innerHTML;
             document.getElementById('content').innerHTML = content;
+
+            var menu_icon = document.getElementById('menu-play-pause-icon');
+            if (menu_icon !== null & !listening) {
+                menu_icon.classList.remove('fa-pause');
+                menu_icon.classList.add('fa-play');
+            }
         })
         .catch(error => console.error('Error fetching page:', error));
 }
@@ -15,6 +22,7 @@ function updateContent(page) {
 function startListening() {
     var song_banner = document.getElementById('song-banner');
     song_banner.classList.add('slideUpSongBanner');
+    // song_banner.onclick = updateContent('listening.html')
     listening = true;
     var banner_icon = document.getElementById('banner-play-pause-icon');
     banner_icon.classList.remove('fa-play');
@@ -60,7 +68,7 @@ function searchMusic() {
             list[i].style.display = "none";
         }
     }
-    
+
 }
 
 

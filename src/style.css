@@ -225,7 +225,7 @@ h1 {
 }
 
 #song-menu #slider {
-   /* -webkit-appearance: none; */
+   -webkit-appearance: none;
     width: 90%;
     color: #C9ADA7;
     background-color: #9A8C98;
